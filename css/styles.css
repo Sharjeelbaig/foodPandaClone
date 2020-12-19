@@ -1,0 +1,363 @@
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.navbarWrapper {
+  background-color: white;
+}
+.navbar-brand {
+  color: #dc317a;
+}
+
+.navbar-nav a {
+  color: #333;
+  line-height: 20px;
+  border-left: 0.1rem solid red;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.firstJumbotron {
+  background-color: transparent;
+}
+
+.firstJumbotron h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #333;
+}
+
+@media (min-width: 480px) {
+  .firstJumbotron h1 {
+    font-size: 3.2rem;
+  }
+
+  @media (min-width: 1265px) {
+    .firstJumbotron h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+.firstJumbotron p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #707070;
+  margin-bottom: 0;
+}
+
+.sections {
+  padding-top: 60px;
+}
+
+.addressSection {
+  background-image: url(../images/adressSection.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.addressbar {
+  background-color: white;
+  padding: 10px;
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 1px 1px 10px rgb(48, 45, 45);
+}
+
+.addressbar button {
+  background-color: #d70f64;
+  color: white;
+  width: 170px;
+  border-style: solid;
+
+  padding: 20px;
+  font-weight: 900;
+}
+
+.partneringSectionbg {
+  background-image: url(../images/partneringSectionbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.simpleButton {
+  background-color: #d70f64;
+  color: white;
+  padding: 10px;
+  border-style: solid;
+}
+
+.city {
+  transition: 1s;
+  width: 207px;
+  height: 233px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  margin: 1%;
+  color: white;
+  position: relative;
+  animation: cityBackgroundSizeDecrease;
+  animation-duration: 0.1s;
+}
+
+.citynav {
+  position: absolute;
+  bottom: 0px;
+  width: 209px;
+}
+.citiesRow {
+  padding: 40px;
+}
+.citybtn {
+  transition: 1s;
+  background-color: #d70f64;
+  color: white;
+  padding: 10px;
+  border-style: solid;
+  display: block;
+  opacity: 0;
+  float: right;
+  margin: 0px 16px;
+}
+
+.city:hover .citybtn {
+  opacity: 1;
+}
+
+.city:hover {
+  transition: 1s;
+  animation: backgroundSize;
+  animation-duration: 1s;
+  background-size: 350px;
+}
+
+@keyframes cityBackgroundSizeIncrease {
+  from {
+    background-size: 300px;
+  }
+  to {
+    background-size: 350px;
+  }
+}
+
+@keyframes cityBackgroundSizeDecrease {
+  from {
+    background-size: 350px;
+  }
+  to {
+    background-size: 300px;
+  }
+}
+
+.cityName {
+  margin: 0px 267px -50px 1px;
+  z-index: 2;
+  position: relative;
+}
+
+.cityLetter {
+  transition: 1s;
+  opacity: 0;
+  color: #333;
+  font-size: 116px;
+  margin: 0px 267px -50px 1px;
+  opacity: 0;
+}
+
+.city:hover .cityLetter {
+  opacity: 0.6;
+}
+
+.addressbarInput {
+  padding: 20px;
+  width: 319px;
+}
+.inline {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .xsSeparator {
+    display: block;
+  }
+
+  /* .addressbarButtonsContainer { 
+    position: inherit;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }*/
+
+  .addressbarInput {
+    width: 100%;
+  }
+}
+
+.addressbarButtonsContainer {
+  width: auto;
+}
+
+.smallScreenNavbarWrapper {
+  display: none;
+  background-color: white;
+}
+
+.smallScreenAddressSectionWrapper {
+  display: none;
+  background-image: url(../images/adressSection.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.smallScreenPartneringSection {
+  display: none;
+}
+
+.getButton {
+  background-color: transparent;
+  height: 70px;
+  border-style: solid;
+  border-color: white;
+}
+.smallScreenDownloadMobileApp {
+  display: none;
+}
+
+.officeSectionBg {
+  background-image: url(../images/office.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.readMoreButton {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.readMoreButton:hover {
+  background-color: #dddddd;
+}
+
+.footer__nav {
+  text-align: right;
+  padding-right: 0;
+  float: right;
+  width: 50%;
+}
+
+.footer__nav li a {
+  cursor: pointer;
+  color: #333;
+  transition: color 0.1s linear;
+}
+
+.linksAndCopyright {
+  border-top: 1px solid #ebebeb;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer__nav li {
+  display: inline-block;
+}
+
+.otherCountries {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-top: 1px solid #ebebeb;
+}
+
+.otherCountries p {
+  text-align: center;
+}
+
+.otherCountries a {
+  color: #666;
+  cursor: pointer;
+}
+
+.smallScreenOfficeSection {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbarWrapper {
+    display: none;
+  }
+
+  .smallScreenNavbarWrapper {
+    display: block;
+  }
+
+  .smallScreenNavbarWrapper a {
+    color: #333;
+    line-height: 20px;
+    border-left: 0.1rem solid red;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .smallScreenAddressSectionWrapper {
+    display: block;
+  }
+
+  .addressSection {
+    display: none;
+  }
+
+  .partneringSection {
+    display: none;
+  }
+
+  .smallScreenPartneringSection {
+    display: block;
+  }
+  .smallScreenDownloadMobileApp {
+    display: block;
+  }
+  .downloadMobileApp {
+    display: none;
+  }
+
+  .footer__nav {
+    text-align: center;
+  }
+
+  .smallScreenOfficeSection {
+    display: block;
+  }
+
+  .officeSection {
+    display: none;
+  }
+}
