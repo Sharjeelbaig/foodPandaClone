@@ -1,0 +1,360 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+
+  <title>Select food</title>
+</head>
+
+<body>
+  
+<!-- navbar -->
+<div class="navbarWrapper">
+    <nav class="navbar navbar-light navbar-fixed-top" style="background-color: white;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img style="display: inline; width: 30px;" src="./images/foodpanda.webp" />
+            <p style="display: inline;">
+            Food Panda
+            </p>
+          </a>
+        </div>
+    
+    
+     
+        
+        <ul class="nav navbar-nav navbar-right"> 
+          <li><a href="#">En</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+    <!-- end of navbar -->
+    
+    <!-- Small Screen NAvBAr -->
+    <div class="row smallScreenNavbarWrapper navbar-fixed-top">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" > 
+          <a class="navbar-brand" href="#">
+          <img style="display: inline; width: 30px;" src="./images/account.png" />
+        </a>
+      </div>
+      
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="height: 50px; text-align: center;">
+          
+         <img src="./images/foodpandaText.png" />
+             
+      </div>
+     
+      
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="float: right;" > 
+         <img src="./images/cart.png" />
+        </div>
+        
+    </div>
+    <br />
+    <br />
+
+    <!-- end of small screen NavBar -->
+    
+<div class="row">
+    <!-- main items -->
+    <div class="container-fluid col-lg-9 col-md-9 col-sm-9">
+    <div class="foodImg">
+    </div>
+<div class="container-fluid" style="background-color: white;">
+    <img class="infoImg" src="./images/info food panda.png" />
+    <br />
+    <br />
+
+<div class="container" style="padding-left: 20px; background-color: white;">
+  <h3>Cafe 9t</h3>
+  <div class="ratingAndSale row">
+    <div class="saleTag col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <p>UPTO 70% OFF</p>
+    </div>
+    <div class="rating col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <img src="./images/star.png" />
+      <h3>4.5</h3>
+      <p>/5</p>
+    </div>
+  </div>
+  <div class="tagsDiv">
+    <p style="color: blue;">$</p>
+    <p style="color: blue;">$</p>
+    <p style="color: #aaa;">$</p>
+<ul class="tags">
+<li>
+  <p>• pakistani</p>
+</li>
+<li>
+  <p>• Snacks-Street Food</p>
+</li>
+<li>
+  <p>• Juices</p>
+</li>
+<li>
+  <p>• Tandoor</p>
+</li>
+<li>
+  <p>• foodpanda delivery</p>
+</li>
+</ul>
+  </div>
+</div>
+
+<div class="container-fluid doubleDealDiv row">
+  <div style="    padding-left: 60px;" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+<h2 style="    line-height: 1em;text-transform: uppercase;font-size: 2.4rem;font-weight: 700;">UPTO 70% OFF</h2>
+<p>Only On "Double Deal 1"</p>
+</div>
+<div style="float: right;" class="col-lg-4 col-md-4">
+<img style="float: right; height: 80px;" src="./images/gifts.png" />
+</div>
+</div>
+
+<!-- Meal NavBar -->
+<div class="mealNav">
+  <div class="mealLink">
+    DOUBLE DEALS
+  </div>
+  <div class="mealLink">
+   PIZZA NAAN
+ </div>
+ <div class="mealLink">
+   FRIES
+ </div>
+ <div class="mealLink">
+ JUICES
+ </div>
+ </div>
+
+
+
+    </div>
+    <br />
+    <!-- Meals -->
+
+<div class="mealsDiv container-fluid">
+  <h2>Double Deals</h2>
+  
+  <div class="meal">
+  
+  <div style="float: left;">
+  <span style="font-size: 1.6rem;font-weight: 700;">
+    Double Deal 1
+  </span>
+  <br />
+  <span style="font-size: 1.4rem; font-weight: 300; ">
+    Chicken tandoori pizza naan & 
+  mayo <br /> garlic
+  </span>
+  <br />
+  <span style="font-size: 1.6rem;font-weight: 500;">
+    PKR 320.00
+  </span>
+  <span style="font-size: 1.6rem;font-weight: 300; text-decoration: line-through;">
+    PKR 320.00
+  </span>
+  </div>
+  
+  <div class="mealImg" style="background-image: url(./images/meals/double\ deal\ 1.jpg);">
+  <button onclick="addToCart(0)" class="plus" >+</button>
+  </div>
+  
+  </div>
+  </div>
+<br />
+
+<!-- Meals -->
+<div class="mealsDiv container-fluid">
+  <h2>Products</h2>
+  
+  <div class="meal">
+  <div style="float: left;">
+  <span id="PID_" style="font-size: 1.6rem;font-weight: 700;">
+   Bags
+  </span>
+  <br />
+  <span id="Color_1" style="font-size: 1.4rem; font-weight: 300; ">
+    Comes in red colors
+  </span>
+  <br />
+  <span id="Price_1" style="font-size: 1.6rem;font-weight: 500;">
+    PKR 400.00
+  </span>
+  </div>  
+  <div style="background-image: url(./images/products/bag.jpg);" class="mealImg">
+  <button  class="plus" onclick="addToCart(0,400)">+</button>
+  </div>
+
+  </div>
+
+  <div class="meal">
+    <div style="float: left;">
+    <span id="Name_2" style="font-size: 1.6rem;font-weight: 700;">
+     Glasses
+    </span>
+    <br />
+    <span id="Color_2" style="font-size: 1.4rem; font-weight: 300; ">
+      all are Transparant
+    </span>
+    <br />
+    <span id="Price_2" style="font-size: 1.6rem;font-weight: 500;">
+      PKR 400.00
+    </span>
+    </div>  
+    <div style="background-image: url(./images/products/glasses.png);" class="mealImg">
+    <button id="btn_1" class="plus" onclick="addToCart(1,400)">+</button>
+    </div>
+  
+    </div>
+<br />
+<br />
+    <div class="meal">
+      <div style="float: left;">
+      <span id="Name_3" style="font-size: 1.6rem;font-weight: 700;">
+        Chicken Malai Boti Pizza Naan
+      </span>
+      <br />
+      <span id="Color_3" style="font-size: 1.4rem; font-weight: 300; ">
+        Comes with smoky BBQ sauce
+      </span>
+      <br />
+      <span id="Price_3" style="font-size: 1.6rem;font-weight: 500;">
+        PKR 400.00
+      </span>
+      </div>  
+      <div style="background-image: url(./images/meals/meal4.jpg);" class="mealImg">
+      <button  onclick="addToCart(2,400)" class="plus">+</button>
+      </div>
+    
+      </div>
+
+      <div class="meal">
+        <div style="float: left;">
+        <span id="Name_4" style="font-size: 1.6rem;font-weight: 700;">
+          Potato Mayo Garlic Pizza Naan
+        </span>
+        <br />
+        <span id="Color_4" style="font-size: 1.4rem; font-weight: 300; ">
+          Comes with green chatni
+        </span>
+        <br />
+        <span id="Price_4" style="font-size: 1.6rem;font-weight: 500;">
+          PKR 200.00
+        </span>
+        </div>  
+        
+        <button  id="btn_2" style="background-image: url(./images/meals/meal5.jpg); height: 100px; width: 100px; background-size: cover;" onclick="3,200" class="plus">+</button>
+        
+      
+        </div>
+  </div>
+
+    </div>
+    <!-- right Bar -->
+
+ <div class="isbig rightBar container-fluid col-lg-3 col-md-3 col-sm-3">
+    <br />
+  
+    <div class="deliveryOrPickup">
+      <center>
+ <p>delivery</p> <!-- switch --> <p>pickup</p>
+ </center>
+    </div>
+    <h3 style="text-align: center;" id="yourCart">Your Cart</h3>
+
+    <div id="Cart" class="foodContainer">
+
+    </div>
+ 
+    <p style="font-weight: lighter;" id="addItemInfo">Start adding items to your cart</p>
+    <div>
+    <div class="cartPrice">
+      <p style="float: left;">Subtotal</p>
+      <p style="float: right;">PKR 0.00</p>
+    </div>
+    <br />
+    <br />
+ 
+    <div class="cartPrice2">
+     <p style="float: left;">Total (Incl.GST)</p>
+     <p id="totalPrice" style="float: right;">PKR 0.00</p>
+    </div>
+ </div>
+ <br />
+ <br />
+ <button class="simpleButton checkOutButton">
+   Go to checkout
+ </button>
+  </div>
+</div>
+
+<!-- footer -->
+
+<div class="footer" style="background-color: white;">
+
+  <div class="socialMediaLinks" style="    border-top: 1px solid #ebebeb;">
+    <div class="row">
+      <img src="./images/foodpanda2.png" style="    height: 90px;width: 200px;" class="col-lg-1" />
+      <img src="./images/facebook.png" class="col-lg-1" style="float: right;" />
+      <img src="images/instagram.png" class="col-lg-1"  style="float: right;"/>
+    </div>
+  </div>
+  
+  <div class="linksAndCopyrights" style="border-top:1px solid #ebebeb;">
+    <div class="row">
+      <p class="col-lg-2 copyright">© 2020 foodpanda</p>
+  
+   <div class="col-lg-10">
+    <nav class="footer__nav">
+      <ul ">
+      <li><a href="https://www.foodpanda.pk/contents/press.htm">Press</a></li>
+      <li class="contact-link" id="contact-link">
+      <a href="/help-center" data-no-turbolink="true" target="_blank">Help Center</a>
+      </li>
+      <li><a href="https://www.foodpanda.pk/contents/pandapay">Refunds with pandapay</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/account-balance-policy">Account Balance Policy</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/terms-and-conditions.htm">Terms and conditions</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/privacy.htm">Privacy policy</a></li>
+      <li><a href="https://www.foodora.com/security" target="_blank">Security</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/apps">Download foodpanda Apps</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/careers">Careers</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/suggest-a-restaurant">Suggest a restaurant</a></li>
+      <li><a href="https://corporate.foodpanda.pk">Corporate Customer</a></li>
+      <li><a href="https://magazine.foodpanda.pk/">foodpanda Magazine</a></li>
+      <li><a href="https://restaurant.foodpanda.pk">Partner with us</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/deals">foodpanda Vouchers&amp;Promo</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/ramzan-deals">Ramzan Deals</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/coronavirus-covid-19">Update on COVID-19 in Pakistan</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/pandamart-grocery-delivery-pakistan">pandamart Grocery Delivery</a></li>
+      <li><a href="https://www.foodpanda.pk/contents/homechefs">foodpanda home chef</a></li>
+      </ul>
+      </nav>
+   </div>
+     
+    </div>
+  
+  </div>
+  
+  
+  
+  </div>
+  
+   <!-- end of footer -->
+   <script src='jquery.js'></script>
+<script src="logics.js">
+</script>
+</body>
+
+</html>
